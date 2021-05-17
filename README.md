@@ -16,7 +16,7 @@ const config = {
 };
 ```
 각 api키는 아래의 사이트에서 발급받을 수 있습니다.
-https://openweathermap.org/
+https://openweathermap.org/  
 https://unsplash.com/developers
 
 감사합니다 :)
