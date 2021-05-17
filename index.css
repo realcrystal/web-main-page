@@ -1,0 +1,218 @@
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #2c3e50;
+}
+
+.main-elements {
+  margin: 100px auto 0 auto;
+  width: 90%;
+  text-align: center;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.todolist {
+  border: 0.1px solid #f6e58d;
+  height: 30vh;
+  padding: 0px;
+  margin-top: 10px;
+  overflow-y: auto;
+  background-color: rgba(246, 229, 141, 0.8);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.todolist::-webkit-scrollbar {
+  width: 7px;
+}
+
+.todolist::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.todolist::-webkit-scrollbar-track {
+  background-color: rgba(246, 229, 141, 0.8);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.todolist ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+  /* background-image: url('images/post_it.png');
+  background-repeat: no-repeat;
+  background-size: 120% 120%; */
+}
+
+.todolist li {
+  text-align: left;
+  font-size: calc(0.51vw + 10.00px);
+  font-family: 'Noto Sans KR', sans-serif;
+  width: auto;
+  /* border: 2px solid red; */
+  margin: 0px;
+}
+
+.todo input {
+  font-size: calc(1.5vw + 10.00px);
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0px auto 10px auto;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 500px;
+  color: white;
+}
+
+.todo input::placeholder {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.todo input:focus::placeholder {
+  color: transparent;
+}
+
+#clock {
+  /* border: 2px solid blue; */
+  margin: 0;
+}
+
+#clock h1 {
+  font-size: calc(4.04vw + 60.00px);
+  font-family: 'Roboto', sans-serif;
+  /* border: 2px solid green; */
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  font-size: calc(1.5vw + 20.00px);
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  /* text-align: center; */
+}
+
+.greetings {
+  /* border: 2px solid pink; */
+}
+
+.form-greeting input,
+.greetings {
+  font-size: calc(1.5vw + 20.00px);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
+button:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+#weather {
+  font-size: 14px;
+  font-weight: 400;
+  /* border: 2px solid lavender; */
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-greeting,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body:after {
+  animation: fadeIn .5s linear;
+}
+
+#bginfo {
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#bginfo span {
+  color: rgba(255, 255, 255, .6);
+}
+
+#bginfo, #weather {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#bginfo a {
+  font-weight: normal;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
